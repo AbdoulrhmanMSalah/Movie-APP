@@ -1,4 +1,4 @@
-import {Modal, show, Button} from "react-bootstrap"
+import {Modal, Button} from "react-bootstrap"
 import React, {useState} from "react"
 import {translate} from "../../utils/helpers"
 import {CLOSE, VIEW_MORE} from "../../common/config/translations"
@@ -22,7 +22,7 @@ const MovieBox = ({
         <img
           className="card-img-top"
           src={process.env.REACT_APP_API_IMG + poster_path}
-          alt="Poster Image"
+          alt="Poster"
         />
         <div className="card-body">
           <div>
@@ -42,6 +42,7 @@ const MovieBox = ({
                 className="card-img-top"
                 style={{width: "14rem"}}
                 src={process.env.REACT_APP_API_IMG + poster_path}
+                alt="Poster"
               />
               <h3>{title}</h3>
               <h4>IMDb: {vote_average}</h4>
